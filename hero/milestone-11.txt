@@ -1,0 +1,80 @@
+17-18/10/24
+
+				Milestone-11-Backend-With-JWT-Axios-Interceptor:
+			    ---------------------------------------------------------
+
+### Module-58:CRUD recap with genius car:
+
+1.58-1-Module overview and project setup:learning from this lec are-
+	1.collect resourse--->https://github.com/ProgrammingHero1/car-doctor-resources then figma file valovabe deke ki ki mil-amil ache kotota page ache deke felo
+	2.react-router-dom teke client floder & file redy kore then npm run dev maro
+	3.connect tailwind css & daisy UI with react file.then tailwind.config.js tik koro & app.css,index.css teke ager ja kicho ache sob falai dao
+	4.eslint e node:true add koro
+	5.src er bitor layout tik koro-->Main.jsx file takbe--->navbar-->outlet-->footer
+
+2.58-2-Set basic Layout for Footer and Header:learning from this lec are-
+	1.home,about,login,singnUp er jonno primary page golo ready koro & path tik koro
+	2.navbar,footer tik kore felo
+	3.je resource t ProgrammingHero1 teke collect korecho sekan teke asset/img golo tomar asset e rako & service.json file t tomar public folder e rako
+	4.protiti page er max-width koto hobe seta tik koro-->go to main.jsx
+
+3.58-3-Style Header and create simple banner:learning from this lec are-
+	1.navbar ekebare ready kore felo.ja kiso lagbena sob falai dao,baki golo reke tik kore felo-->home,about,contact...DRY er kotha matai rakio
+	2.navbar ready korar por then home er banner component tik koro-->go to carousel--daisyUI--->https://daisyui.com/components/carousel/
+
+4.58-4-Style Banner Component with gradient overlay:learning from this lec are-
+	1.banner er upor heading,paragraph,button golo tik koro-width,color,size,button-outline
+	2.vvi--banner er img e kibabe background color dite hoi seta tik kore jene then banner img e background color set kore dao
+		2a.https://tailwindcss.com/docs/background-image#linear-gradients-->
+		2b. <div className="absolute h-full justify-between bg-gradient-to-r from-[#000000] to-[rgb(10 10 10)] rounded-xl">...</div>
+
+5.58-5-Create About section with Image Relative Position:learning from this lec are-
+	1.hero-about us er 1t About-component tik koro then sekane left-right 1/2(img)-1/2(content) kore completely component t banai felo
+		1a. https://daisyui.com/components/hero/
+	2.img side er img 2t te relative-absolute tik kore 1t img er upor r 1t img bosai dio.jei img t k adik-odik krbe setate absolute bosabe.
+
+6.58-6-Load Services fake data and display service Card:learning from this lec are-
+	1.prothome public folder e services.json file t takbe then service component e services.json data golo useEffect er maddome fetch korbo.
+	2.	fetch('services.json')
+		// fetch('http://localhost:5000/services')
+  		.then(res=>res.json())
+        	// .then(data=>console.log(data))
+        	.then(data=>setServices(data))
+	3.service data golo map kore card akare dekate hobe--->https://daisyui.com/components/card/.
+	4.So alada akti singleCard component takbe.ai singleCard er upor map chalie title,img,price... destructure kore tik korbo.
+
+7.58-7-(Recap) Create a simple Login page with firebase integration:learning from this lec are-
+	1.abar amra login page ready korbo.go to---->https://daisyui.com/components/hero/
+	2.ai login page er jonno akti login page-component hobe then atake akpashe email,password,button die oporpashe 1t img die ready kore felte hobe.
+	3.now go to firebase--->https://console.firebase.google.com/--->car-doctor project er nam dao & firebase install dao,firebase er data golo copy 
+	kore firebase folder er firebase.config.js file e rako
+
+8.58-8-(Recap) Sign Up page setup and create Auth Context setup:learning from this lec are-
+	1.similar login page er moto signup page banai felo just username add koro & login/signup er modde akta link kore dao <Link to="/login">Login</Link>
+	2.now firebase er car-doctor project er authentification email/password & google add user tik kore dao--->https://firebase.google.com/docs/auth
+	3.abar client-src e provider folder banie AuthProviders.jsx file ready koro.jekane authContext=createContext(),createUser,signInUser,...sob takbe .
+	4.orthat ai AuthProviders.jsx file t hobe parent file main.jsx k AuthProviders.jsx er bitore dokate hobe.  
+		<Authproviders>
+        		<RouterProvider router={router} />
+      		</Authproviders>
+	5.ai file t te user,setUser,loading,setloading,createUser,signInUser,onAuthStateChanged tik kore felo
+
+9.58-9-(Recap) Create a user and Module Summary and Home work:learning from this lec are-
+	1.signUp page teke user create korar jonno createUser(email,pass) die Authprovider e patao then 
+	  sekan teke createUserWithEmailAndPassword(auth,email,password) die firebase e user create hoye jabe.
+	2.user create hoyeche kina seta check korar jonno use--->onAuthStateChanged(auth, (currentUser)=>{
+			setUser(currentUser);
+            		console.log('current user is :',currentUser);
+		     } apply koro by using useEffect hook.
+	3.akn login page e signInUser(email,pass) die  Authprovider e patao then 
+	  sekan teke signInWithEmailAndPassword(auth,email,password) die firebase e jabe & login hobe
+
+10.58_10-High level overview of Mongodb Operators:learning from this lec are-
+	1.know about comparision & logical operator of mongodb--->https://www.w3schools.com/mongodb/mongodb_query_operators.php
+
+
+
+
+### Module-59:Genius Car node mongo CRUD recap
+1.59-1-Project and set basic server:learning from this lec are-
+	1.
