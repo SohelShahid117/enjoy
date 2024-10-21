@@ -76,5 +76,53 @@
 
 
 ### Module-59:Genius Car node mongo CRUD recap
+
 1.59-1-Project and set basic server:learning from this lec are-
-	1.
+	1.create a server folder.then npm init -y maro.
+	2.abar install dao  npm i mongodb,nodemon,cors,dotenv,express.
+	3.index.js file create kore express js teke hello world copy paste dao--->https://expressjs.com/en/starter/hello-world.html
+	4.app.listen()--e-ai line t add dao--->console.log(`my server is running at :http://localhost:${port}`)
+	5.akn soro mongoDB--https://www.mongodb.com/products/platform/atlas-database->
+	6.atlas er database e gie akti database & collection er nam dao then Database Access e userName,pawssword create koro
+	7.akaneo 1bar ghore aso--->https://www.npmjs.com/package/dotenv
+	8.userName,password mongoDB teke copy kora code e bosai die deko ping-ping-ping ase kina.asle okkkk.
+
+2.59-2-Insert bulk Data In Database and Load services data:learning from this lec are-
+	1.add const cors = require('cors');require('dotenv').config()
+	2.middleware add korte hobe-->app.use(cors()); app.use(express.json())
+	3.// await client.close(); ati obossoi delete korte hobe || comment e rakte hobe.
+	4.follow this link--->https://www.mongodb.com/docs/drivers/node/current/usage-examples/
+	5.service.json data teke _id golo falai dao then mongoDBr database e service.json er datagolo manually insert koro(copy-paste);
+	6.abar database er datagolo collect koro--->const serviceCollecton=client.db(dbNamehobe).collection(clctionNameHobe)
+ 	7.akn server site e ane API use kore link ready koro then link t client er service.jsx er fetch(...) e bosai dao--->https://www.mongodb.com/docs/drivers/node/current/usage-examples/find/
+	8.abar serviceCard e protiti service _id er jonno dynamic button ready koro---><Link to=`/checkout/${_id}`>click me</Link>
+
+3.59-3-Create checkout Form and load single service data:learning from this lec are-
+	1.akn hobe akti checkOut || order form.client kon service t nibe setar jonno ai checkout form t banano hobe
+	2.serviceCard er dynamic button e click korle checkOut page e nie jabe
+	3.abar kon specific service t ami nite chai setar jonno server e akta get API banate hobe.
+	4.server teke sepecific service er data golo client e dekanor jonno path e loader & page e useloader marte hobe;
+	5.then data golo destructuring kore rako & checkout er order form t figma er design moto banai felo
+
+4.59-4-Extract booking service Data:learning from this lec are-
+	1.checkOut || order form t valobabe design kore develop korte hobe.
+	2.now click on order confirm button & go to handleServiceOrder function.ai fuction e form er sobgolo data nie akti order object{} hobe.
+	3.abar server site e bookingOrdersCollection name akta collction name dao  bookingOrder er akta post API ready koro--->https://www.mongodb.com/docs/drivers/node/current/usage-examples/insertOne/
+
+5.59-5-Save order on the order collection using Post Method:learning from this lec are-
+	1.akon korba client teke fetch/POST method die data server site e patai dao .then sekan teke data DB te jabe/
+	2.data insert hole client site e akta alert("order confirm hoiche") dao.
+	3.abar client site e logout button reday koro.{user?<>Logout</>:<>Login</>}
+	4.AuthProviders component e logout function ready kore navbar e logout er jonno ante hobe--->https://firebase.google.com/docs/auth/web/password-auth
+ 
+6.59-6-Use Query parameter to load user specific data:learning from this lec are-	
+	1.j booking data golo DB te insert hoyeche sekan teke kiso specific data(email onosare) show korar jonno server e akta get API reday korte hobe--->https://www.mongodb.com/docs/drivers/node/current/usage-examples/findOne/
+	2.then booking order golo client site e show korar jonno useEffect e fetch() die ane setBooking e rakte hobe.
+	3.r navbar e user takle dynamic 2 t button hobe;1.MyBookings  2.logout
+
+7.59-7-Display bookings and Service image in a tabular format:learning from this lec are-	
+	1.prothome 1t privateRoute hobe jar children hobe BookingOrder.user takle BookingOrder e jabe r user na takle login page e jabe
+	2.myBooking golo dekanor jonno akta dynamic table hobe.jotogolo order takbe tototi table row hobe.map kore ante hobe --->https://daisyui.com/components/table/
+	3.booking info golo destructure kore table data te dekate hobe.
+
+8.59-8-Create Delete API and Delete a service Booking::learning from this lec are-
