@@ -125,4 +125,29 @@
 	2.myBooking golo dekanor jonno akta dynamic table hobe.jotogolo order takbe tototi table row hobe.map kore ante hobe --->https://daisyui.com/components/table/
 	3.booking info golo destructure kore table data te dekate hobe.
 
-8.59-8-Create Delete API and Delete a service Booking::learning from this lec are-
+8.59-8-Create Delete API and Delete a service Booking:learning from this lec are-
+	1.table er design t tik koro then 1t delete button add koro-->https://daisyui.com/components/button/
+	2.akn j row/service t delete korte chao setir akti deleteFunction ready koro && function t te item tir specific id patao.
+	3.abar deleteFunction e fetch marte hobe server er delete API link dore.
+	4.server site e app.delete() er API banate hobe--->app.delete("/bookingsOrder/:id",async()=>{})
+	5.sobcheye valo hoi deleteFunction t bookingOrder component e raka not bookingrow component.coz bookingOrder e rakle setBooking e delete chara remaining item golo rakle sate sate deleted hoye remaining golo dekabe.
+	6.abar soro hobe update er kaj.update er jonno 1t patch API reday koro
+
+9.59-9 Module summary and update booking using Patch:learning from this lec are-
+	1.prothome e akti patch API banao then table er confirm button er jonno handleUpdate/handleConfirm function ready koro.
+	2.abar hnadleConfirm/Update function e fetch() maro using server patch API link .then(res=>res.json()).then(data=>console.log(data))
+	3.akn fetch e method,headers,body agolo add koro .then console.log(data) er modde filter method,find method use koro.
+	4.data te setBooking e remaingData,updateData add koro.
+	5.const remainingData = bookings.filter(bk=>bk._id !==id) const updateData = bookings.find(bk=>bk._id ==id)
+          updateData.status = "confirm"
+          const newBookings = [updateData,...remainingData]
+          setBookings(newBookings) 
+	6.akn tomi sobgolo tiktak dekte pabe
+	7.valobabe server er patch API ready korba--->https://www.mongodb.com/docs/drivers/node/current/usage-examples/updateOne/
+	8.arooo kaj ache ja holo booking row er confirm btn t dynamic koro.orthat status takle confirmed dekabe font-size,color different hobe r na 
+	  takle confirm dekabe 
+
+### Module-60:Introduction to JWT & Axios Interceptor:
+
+1.60-1-Project overview and developer mindset:learning from this lec are-
+	1.
