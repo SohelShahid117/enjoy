@@ -150,4 +150,10 @@
 ### Module-60:Introduction to JWT & Axios Interceptor:
 
 1.60-1-Project overview and developer mindset:learning from this lec are-
-	1.
+	1.akjon expert developer hote hole tomar jesob jinis lagbe ta holo-
+		a.30% holo skill || knowledge
+		b.70% tomar learning onek kisoi bhole jabe but halka halka mone takbe.serarch kore research kore ber korte hobe.onek kisoi jante but bhole geso atai sababik.
+		c.unknown jinis developer er kase astei takbe astei takbe ja google,chatgpt,frnd,fbGroup,linkdin,youTube teke help niba.so 30% skill && 70% sahos/courage==100% developer;
+		d.developer==doirjo==enjoyError
+	2.
+		
