@@ -155,5 +155,10 @@
 		b.70% tomar learning onek kisoi bhole jabe but halka halka mone takbe.serarch kore research kore ber korte hobe.onek kisoi jante but bhole geso atai sababik.
 		c.unknown jinis developer er kase astei takbe astei takbe ja google,chatgpt,frnd,fbGroup,linkdin,youTube teke help niba.so 30% skill && 70% sahos/courage==100% developer;
 		d.developer==doirjo==enjoyError
-	2.
+	2.tomi senior developer holeo err khabe tobe seniorderErr =juniorderERr/2
+	3.abar amra Checkout component k private route korbo.orthat login hole then Checkout component e jete parbe otherwise Login page e nie jabe
+	4.akn service e click korle login e jabe then login hole service er jonno checkout form e jete hole private route e useLocatin hook use kore pathName ber korte hobe.
+
+2.60-2 Auth Redirect and JWT core concepts:learning from this lec are-
+	1.
 		
